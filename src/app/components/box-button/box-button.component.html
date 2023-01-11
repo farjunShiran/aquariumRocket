@@ -1,0 +1,29 @@
+<div class="container">
+    <table class="example-boundary" cdkDropListGroup>
+        <div class="controller example-box " cdkDragBoundary=".example-boundary" cdkDrag>
+            <thead>
+                <tr>
+                    <th>
+                        <div class="container-circle">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>
+                        <div cdkDropList [cdkDropListData]="colors" class="color-list"
+                            (cdkDropListDropped)="drop($event)" cdkDrag>
+                            <button class={{color}} *ngFor="let color of colors" cdkDrag
+                                (click)="pickColor(color)">{{color}}</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </div>
+    </table>
+</div>

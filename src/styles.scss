@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    height: 100vh;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.Red {
+    margin: 1px;
+    background: red;
+}
+.Green {
+    margin: 1px;
+    background: green;
+}
+.Blue {
+    margin: 1px;
+    background: blue;
+}

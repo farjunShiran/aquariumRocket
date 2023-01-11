@@ -1,0 +1,4 @@
+<div class="shuttle-background"
+    [ngClass]="{'Green' : backgroundColor=='Green', 'Red':  backgroundColor=='Red', 'Blue':  backgroundColor=='Blue'}">
+    <img #rocketImage src="assets/images/rocketline_white.png"  [ngStyle]="{'left':'250px','bottom':'250px'}" (load)="onImageLoad()"/>
+</div>
